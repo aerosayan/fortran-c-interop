@@ -1,0 +1,10 @@
+ - C FUNCTION CALLED...
+   '- FUNCTION :: void sum_int_c(a,b)
+   '- A        := 1
+   '- B        := 9
+   '- A+B      := 10
+ - C FUNCTION CALLED...
+   '- FUNCTION :: void sum_double_c(a,b)
+   '- A        := 1.000100
+   '- B        := 9.000100
+   '- A+B      := 10.000200
