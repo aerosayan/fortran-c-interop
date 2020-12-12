@@ -1,0 +1,31 @@
+ NOTE : We have compiled and run the code two times to show that dynamic arrays
+        can be passed to the fortran subroutine.
+        Once with N = 5 and then with N = 9
+
+For N = 5:
+
+ - FORTRAN SUBROUTINE CALLED...
+   '- SUBROUTINE :: SUM_ARRAY_INT(ARR,X, N)
+      '- ARR     :=           0           1           2           3           4
+      '- X       :=           1
+      '- N       :=           5
+      '- ARR MODIFIED AS :: ARR(:) = ARR + X
+      '- ARR     :=           1           2           3           4           5
+ - FORTRAN SUBROUTINE FINISHED...
+ - RETURNING TO C FUNCTION...
+   '- FUNCTION   :: int main()
+      '- ARR     :=           1           2           3           4           5
+
+For N = 9:
+
+ - FORTRAN SUBROUTINE CALLED...
+   '- SUBROUTINE :: SUM_ARRAY_INT(ARR,X, N)
+      '- ARR     :=           0           1           2           3           4           5           6           7           8
+      '- X       :=           1
+      '- N       :=           9
+      '- ARR MODIFIED AS :: ARR(:) = ARR + X
+      '- ARR     :=           1           2           3           4           5           6           7           8           9
+ - FORTRAN SUBROUTINE FINISHED...
+ - RETURNING TO C FUNCTION...
+   '- FUNCTION   :: int main()
+      '- ARR     :=           1           2           3           4           5           6           7           8           9
