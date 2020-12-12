@@ -12,8 +12,8 @@ This repository contains example codes showing interoperability between C/C++ an
    '- interop-1-1 : Call Fortran subroutine from C.
    '- interop-2-1 : Call C void function from Fortran.
    '
-   '- interop-1-2 : Send integer argument to Fortran subroutine from C.
-   '- interop-2-2 : Send integer argument to C void function from Fortran.
+   '- interop-1-2 : Send integer and double arguments to Fortran subroutine from C.
+   '- interop-2-2 : Send integer and double arguments to C void function from Fortran.
 ```
 
 
