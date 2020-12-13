@@ -4,6 +4,8 @@ Modern scientific applications require a well balanced approach to design. Many 
 
 This repository contains example codes showing interoperability between C/C++ and Fortran.
 
+_work in progress_ ...
+
 # Code
 
 ```
@@ -20,10 +22,17 @@ This repository contains example codes showing interoperability between C/C++ an
  - INTERMEDIATE
    '
    '- interop-3-1 : Send dynamic integer array to Fortran subroutine from C.
-   '- interop-3-2 : Send dynamic integer array to C void function from Fortran.
    '
    '- interop-4-1 : Send dynamic integer matrix to Fortran subroutine from C.
 ```
+# How to run code
 
+Makefiles are provided along with the expected output in file output.txt.
 
+Go to any directory, run make command to produce the executable `a.out`, then run the executable `a.out`.
 
+```
+$ cd interop-4-1
+$ make
+$ ./a.out
+```
