@@ -1,15 +1,16 @@
 subroutine sum_matrix_int(mat, x, ncol_elems, nrow_elems)
     use iso_c_binding, only : c_int
     implicit none
-    ! The argument ARR is passed by reference.
-    ! We want to modify the values inside ARR and return it.
+    ! The argument MAT is passed by reference.
+    ! We want to modify the values inside MAT and return it.
     ! Thus intent(inout) is used.
     !
-    ! NOTE : Since we know the length of the array ARR (i.e N), we let the
-    !        compiler know that by defining it as ARR(N), as shown below.
+    ! NOTE : Since we know the length of the matrix MAT, we let the
+    !        compiler know that by defining it as MAT(NCOL_ELEMS, NROW_ELEMS),
+    !        as shown below.
     !
-    !        This basically allows us to pass both dynamic arrays and static
-    !        arrays to this function. This will be very useful for us.
+    !        This basically allows us to pass both dynamic matrices and static
+    !        matrices to this function. This will be very useful for us.
     !
     integer(c_int), intent(inout) :: mat(ncol_elems, nrow_elems)
     ! The arguments X, N, NCOL_ELEMS, NROW_ELEMS are passed by value
