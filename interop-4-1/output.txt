@@ -1,0 +1,76 @@
+NOTE : We run the code for two sets :
+       (ncol_elems = 3, nrow_elems = 2) and (ncol_elems = 4, nrow_elems = 2).
+
+For (ncol_elems = 3, nrow_elems = 2) :
+
+- FORTRAN SUBROUTINE CALLED...
+   '- SUBROUTINE :: SUM_MATRIX_INT(MAT, X, NCOL_ELEMS, NROW_ELEMS)
+      '- X            :=           1
+      '- NCOL_ELEMS   :=           3
+      '- NROW_ELEMS   :=           2
+      '- MAT          :=           0           1           2           3           4           5
+      '  '
+      '  '- COL ELEMS        :
+      '     '-->                         0  | LOCATION       :        94435549309216
+      '     '-->                         1  | LOCATION       :        94435549309220
+      '     '-->                         2  | LOCATION       :        94435549309224
+      '  '- COL ELEMS        :
+      '     '-->                         3  | LOCATION       :        94435549309228
+      '     '-->                         4  | LOCATION       :        94435549309232
+      '     '-->                         5  | LOCATION       :        94435549309236
+      '
+      '- MAT MODIFIED AS :: MAT(:,:) = MAT + X
+      '- MAT          :=           1           2           3           4           5           6
+      '  '
+      '  '- COL ELEMS        :
+      '     '-->                         1  | LOCATION       :        94435549309216
+      '     '-->                         2  | LOCATION       :        94435549309220
+      '     '-->                         3  | LOCATION       :        94435549309224
+      '  '- COL ELEMS        :
+      '     '-->                         4  | LOCATION       :        94435549309228
+      '     '-->                         5  | LOCATION       :        94435549309232
+      '     '-->                         6  | LOCATION       :        94435549309236
+ - FORTRAN SUBROUTINE FINISHED...
+ - RETURNING TO C FUNCTION...
+   '- FUNCTION   :: int main()
+      '- MAT          :=           1           2           3           4           5           6
+
+
+For (ncol_elems = 4, nrow_elems = 2) :
+
+ - FORTRAN SUBROUTINE CALLED...
+   '- SUBROUTINE :: SUM_MATRIX_INT(MAT, X, NCOL_ELEMS, NROW_ELEMS)
+      '- X            :=           1
+      '- NCOL_ELEMS   :=           4
+      '- NROW_ELEMS   :=           2
+      '- MAT          :=           0           1           2           3           4           5           6           7
+      '  '
+      '  '- COL ELEMS        :
+      '     '-->                         0  | LOCATION       :        94914058500384
+      '     '-->                         1  | LOCATION       :        94914058500388
+      '     '-->                         2  | LOCATION       :        94914058500392
+      '     '-->                         3  | LOCATION       :        94914058500396
+      '  '- COL ELEMS        :
+      '     '-->                         4  | LOCATION       :        94914058500400
+      '     '-->                         5  | LOCATION       :        94914058500404
+      '     '-->                         6  | LOCATION       :        94914058500408
+      '     '-->                         7  | LOCATION       :        94914058500412
+      '
+      '- MAT MODIFIED AS :: MAT(:,:) = MAT + X
+      '- MAT          :=           1           2           3           4           5           6           7           8
+      '  '
+      '  '- COL ELEMS        :
+      '     '-->                         1  | LOCATION       :        94914058500384
+      '     '-->                         2  | LOCATION       :        94914058500388
+      '     '-->                         3  | LOCATION       :        94914058500392
+      '     '-->                         4  | LOCATION       :        94914058500396
+      '  '- COL ELEMS        :
+      '     '-->                         5  | LOCATION       :        94914058500400
+      '     '-->                         6  | LOCATION       :        94914058500404
+      '     '-->                         7  | LOCATION       :        94914058500408
+      '     '-->                         8  | LOCATION       :        94914058500412
+ - FORTRAN SUBROUTINE FINISHED...
+ - RETURNING TO C FUNCTION...
+   '- FUNCTION   :: int main()
+      '- MAT          :=           1           2           3           4           5           6           7           8
+
