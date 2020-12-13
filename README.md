@@ -9,6 +9,8 @@ This repository contains example codes showing interoperability between C/C++ an
 ```
  - BASIC
    '
+   '- interop-0-1 : extern "C"
+   '
    '- interop-1-1 : Call Fortran subroutine from C.
    '- interop-1-2 : Call C void function from Fortran.
    '
@@ -19,6 +21,8 @@ This repository contains example codes showing interoperability between C/C++ an
    '
    '- interop-3-1 : Send dynamic integer array to Fortran subroutine from C.
    '- interop-3-2 : Send dynamic integer array to C void function from Fortran.
+   '
+   '- interop-4-1 : Send dynamic integer matrix to Fortran subroutine from C.
 ```
 
 

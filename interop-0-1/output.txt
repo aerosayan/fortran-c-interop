@@ -1,0 +1,8 @@
+RUN : $ nm ccode.o
+
+0000000000000000 T do_c_stuff
+
+RUN : $ nm cppcode.o
+
+000000000000000f T do_cpp_stuff_extern
+0000000000000000 T _Z12do_cpp_stuffv
