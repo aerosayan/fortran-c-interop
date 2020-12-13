@@ -13,7 +13,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void sum_matrix_int_(int * arr, int x, int ncols, int nrows);
+void sum_matrix_int_(int * mat, int x, int ncol_elems, int nrow_elems);
 
 int main()
 {
@@ -56,7 +56,7 @@ int main()
     //        i.e, MATRIX = [COLUMN 1][COLUMN 2][COLUMN 3]...[COLUMN N]
     //
     //        Thus, we reserve memory for the matrix as a 1D contiguous block.
-    //        The contiguous block has space for nrows*ncols elements.
+    //        The contiguous block has space for nrow_elems*ncol_elems elements.
     //
     int *mat = (int*)malloc(nrow_elems*ncol_elems*sizeof(int));
 
