@@ -24,6 +24,8 @@ _work in progress_ ...
    '- interop-3-1 : Send dynamic integer array to Fortran subroutine from C.
    '
    '- interop-4-1 : Send dynamic integer matrix to Fortran subroutine from C.
+   '
+   '- interop-5-1 : Send C struct to Fortran subroutine from C.
 ```
 # How to run code
 
