@@ -1,0 +1,19 @@
+ - FORTRAN SUBROUTINE CALLED...
+   '- SUBROUTINE :: CALL_FORTRAN(ARR, MAT, N)
+   '- N        :            5
+   '- ARR      :            0           1           2           3           4
+   '- MAT(:,1) :            0           1           2           3           4
+   '- MAT(:,N) :           20          21          22          23          24
+ - ENCAPSULATING DATA INSIDE DERIVED TYPE...
+   '- N        :            5
+   '- EARR     :            0           1           2           3           4
+   '- EMAT(:,1):            0           1           2           3           4
+   '- EMAT(:,N):           20          21          22          23          24
+ - ADDING ONE TO EARR, EMAT THROUGH THE DERIVED TYPE...
+   '- OPERATION :: dc%earr(:)   = dc%earr+1
+   '- OPERATION :: dc%emat(:,:) = dc%emat+1
+ - VERIFYING IF ORIGINAL ARR, MAT WERE MODIFIED...
+   '- ARR      :            1           2           3           4           5
+   '- MAT(:,1) :            1           2           3           4           5
+   '- MAT(:,N) :           21          22          23          24          25
+ - FORTRAN SUBROUTINE FINISHED...
