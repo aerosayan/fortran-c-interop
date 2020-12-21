@@ -26,6 +26,7 @@ _work in progress_ ...
    '- interop-4-1 : Send dynamic integer matrix to Fortran subroutine from C.
    '
    '- interop-5-1 : Send C struct to Fortran subroutine from C.
+   '- interop-5-2 : Send C struct containing dynamic integer array to Fortran subroutine from C.
    '
    '- interop-6-1 : i.   Send dynamic integer array and matrix to Fortran subroutine from C.
                     ii.  Use c_f_pointer in Fortran to access integer array and matrix allocated in C.
