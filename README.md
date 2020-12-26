@@ -31,6 +31,12 @@ _work in progress_ ...
    '- interop-6-1 : i.   Send dynamic integer array and matrix to Fortran subroutine from C.
                     ii.  Use c_f_pointer in Fortran to access integer array and matrix allocated in C.
                     iii. Store received data inside a derived type for better encapsulation.
+
+ - PERFORMANCE
+   '- perf-interop-5-2 : Performance analysis of interop-5-2 by observing the
+                         generated assembly for arrays of integer and double
+                         type and verifying if MAVX2 optimizations
+                         was possible.
 ```
 # How to run code
 
